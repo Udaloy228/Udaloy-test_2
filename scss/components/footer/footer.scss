@@ -1,0 +1,24 @@
+@import "../../common/index.scss";
+
+.footer {
+    @include mixin-section;
+    background: $basic-color;
+}
+
+.footer__container {
+    width: 1200px;
+    height: 144px;
+    @include flex($sb-center-to-flex: true);
+    margin: $margin;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__link {
+    @include descr-desktop;
+    margin-left: 48px;
+    color: #fff;
+}

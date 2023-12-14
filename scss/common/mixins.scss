@@ -1,0 +1,73 @@
+@mixin descr-desktop () {
+    color: #002F3E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+@mixin descr-mobile () {
+    color: #002F3E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: 1px;
+}
+
+@mixin title-desktop () {
+    color: #002F3E;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 58px; 
+    text-transform: capitalize;
+}
+
+@mixin title-mobile () {
+    color: #002F3E;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 41.6px; 
+    text-transform: capitalize;
+}
+
+@mixin mixin-margin {
+    margin: 0 12px;
+}
+
+@mixin flex($sb-center-to-flex: false, $row-to-flex: false, $ai-to-flex: false, $column-to-dlex: false, $sb-to-flex: false){
+    display: flex;
+    @if($sb-center-to-flex){
+        justify-content: space-between;
+        align-items: center;
+    }
+    @else if($row-to-flex){
+        flex-direction: row;
+    }
+    @if($ai-to-flex){
+        align-items: center;
+    }
+    @else if($column-to-dlex){
+        justify-content: center;
+        flex-direction: column;
+    }
+    @if($sb-to-flex){
+        justify-content: space-between;
+    }
+
+}
+
+@mixin mixin-container {
+    max-width: 1227px;
+    width: 100%;
+    position: relative;
+}
+
+@mixin mixin-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

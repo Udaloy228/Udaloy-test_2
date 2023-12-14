@@ -1,0 +1,14 @@
+@import "./common/index.scss";
+@import "./components/header/index.scss";
+@import "./components/banner/index.scss";
+@import "./components/navigation/index.scss";
+@import "./components/content/index.scss";
+@import "./components/info/index.scss";
+@import "./components/contact/index.scss";
+@import "./components/footer/index.scss";
+
+html {
+    font-family: Poppins;
+    scroll-behavior: smooth;
+}
+

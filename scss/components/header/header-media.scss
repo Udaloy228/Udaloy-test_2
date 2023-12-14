@@ -1,0 +1,22 @@
+@import "../../common/media-preackpoints.scss";
+
+@include mobile {
+    .header__item {
+        display: none;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__menu-mobile {
+        @include flex($ai-to-flex: true);
+        margin-left: 24px;
+    }
+    .header__item-modile {
+        @include flex($ai-to-flex: true);
+        margin-right: 16px;
+    }
+    .header__img {
+        width: 54px;
+        height: 54px;
+    }
+}

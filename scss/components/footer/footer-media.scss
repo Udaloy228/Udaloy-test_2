@@ -1,0 +1,33 @@
+@import "../../common/media-preackpoints.scss";
+
+@include tablet {
+    .footer {
+        .footer__container {
+            flex-direction: column;
+            height: auto;
+            margin-top: 56px;
+            margin-bottom: 36px;
+            .footer__logo {
+                margin:  0 auto 56px;
+            }
+            .footer__menu {
+                margin: 0;
+                .footer__list {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0;
+                    margin:  0 auto;
+                    .footer__line-list {
+                        margin-bottom: 16px;
+                        .footer__link {
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

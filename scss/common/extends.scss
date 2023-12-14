@@ -1,0 +1,38 @@
+%extend-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+%extend-container {
+    max-width: 1227px;
+    width: 100%;
+    position: relative;
+}
+
+%extend-content-row {
+    display: flex;
+    flex-direction: row;
+}
+
+%extend-descr {
+    color: #002F3E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    letter-spacing: 1px;
+}
+
+%extend-title {
+    color: #002F3E;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 58px; 
+    text-transform: capitalize;
+}
+
+%extend-margin {
+    margin: 0 12px;
+}

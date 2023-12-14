@@ -1,0 +1,65 @@
+@import "../../common/index.scss";
+
+.banner__container-mobile {
+    display: none;
+}
+.banner__content-mobile {
+    display: none;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 16px;
+}
+.banner__container {
+    width: 1227px;
+    height: 482px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url(../img/banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.banner__content {
+    margin-top: 125px;
+    margin-left: 83px;
+}
+.banner__title {
+    color:#002F3E;
+    font-weight: 700;
+    font-size: 54px;
+    margin: 0 0 45px 0;
+}
+.banner__descr {
+    color:#002F3E;
+    margin: 0 0 72px 0;
+    font-size: 24px;
+}
+a {
+    text-decoration: none;
+}
+.banner__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 32px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.352px;
+    width: 308px;
+    height: 64px;
+    box-shadow: 0px 6px 15px 0px rgba(2, 128, 108, 0.30);
+    background: var(--linear-botton, linear-gradient(90deg, #006A63 0%, #00D2A4 100%));
+    box-sizing: border-box;
+	transition: all 500ms ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

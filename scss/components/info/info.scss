@@ -1,0 +1,74 @@
+@import "../../common/index.scss";
+
+.particle--thirteen {
+    top: 0;
+    right: 0;
+}
+.particle--fourteen {
+    top: 394px;
+    left: 0;
+}
+.particle--fifteen {
+    bottom: 313px;
+    right: 0;
+}
+.particle--sixteen {
+    bottom: -170px;
+    left: 55%;
+}
+
+.info {
+    @include mixin-section;
+    position: relative;
+    margin-top: 96px;
+}    
+.info__container {
+    @include mixin-container;
+    @include flex($column-to-dlex: true);
+    align-items: center;
+    margin: $margin;
+}
+
+.info__text {
+    margin: 0 83px;
+}
+
+.info__title {
+    @include title-desktop;
+    margin: 0 0 40px 0px;
+}
+            
+.info__descr {
+    @include descr-desktop;
+    margin-bottom: 40px;
+}
+.info__container-person {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1227px;
+    width: 100%;
+    margin: 61px 83px;
+}
+    .info__person {
+        margin: $margin;
+    }
+
+    .info__icon img {
+        margin-bottom: 45px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info__person-title {
+        @include title-desktop;
+        font-size: 28px;
+        text-align: center
+    }
+
+    .info__person-descr {
+        @include descr-desktop; 
+        text-align: center;
+        max-width: 584px;
+        width: 100%;
+    }

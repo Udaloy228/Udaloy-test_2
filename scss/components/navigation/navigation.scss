@@ -1,0 +1,35 @@
+@import "../../common/index.scss";
+
+.navigation {
+    @include mixin-section;
+    margin-top: 44px;
+}
+
+.navigation__container {
+    @include mixin-container;
+}
+
+.navigation__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navigation__link {
+    @include flex($sb-center-to-flex: true);
+    flex-direction: column;
+    margin: 20px 10px;
+    transition: transform .2s;
+    text-align: center;
+    letter-spacing: 1px;
+    @extend %extend-descr;
+
+    &:hover {
+        color: #006A63;
+        transform: scale(1.05);
+    }
+}
+
+.navigation__img {
+    margin-bottom: 10px;
+}

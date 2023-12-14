@@ -1,0 +1,48 @@
+@import "../../common/media-preackpoints.scss";
+
+@include desktop {
+
+    .banner__title {
+        font-size: 4.2vw;
+        margin: 0 0 4% 0;
+    }
+
+    .banner__descr {
+        font-size: 1.9vw;
+        margin: 0 0 6% 0;
+    }
+
+    .banner__button {
+        width: 27%;
+        height: 5vw;
+        font-size: 1.9vw;
+    }
+
+    .banner__content {
+        margin-top: 10%;
+        margin-left: 7%;
+        margin-bottom: 9%;
+    }
+
+    .banner__container {
+        height: 100%;
+    }
+}
+
+
+@include mobile {
+    .banner__container {
+        display: none;
+    }
+    .banner__container-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .banner__img-mobile {
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,50 @@
+@import "../../common/index.scss";
+
+.header__menu-mobile {
+    display: none;
+}
+
+.header__item-modile {
+    display: none;
+}
+
+.header {
+    @include mixin-section;
+    background: $content-color;
+    box-shadow: 0px 0px 24px 0px rgba(0, 97, 87, 0.20);
+}
+
+.header__container {
+    @include mixin-container;
+    @include flex($sb-center-to-flex: true);
+    height: 62px;
+}
+
+.header__item {
+    padding: 0 12px;
+}
+
+.header__img {
+    width: 54px;
+}
+
+.header__menu {
+    @include mixin-margin;
+}
+
+.header__list {
+    @include flex($row-to-flex: true);
+}
+
+.header__line-list {
+    margin-left: 40px;
+}
+
+.header__link {
+    color: #002F3E;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px; 
+    letter-spacing: 0.34px;
+    text-transform: capitalize;
+}
